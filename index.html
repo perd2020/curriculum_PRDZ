@@ -14,7 +14,8 @@
 
     <!-- css -->
     <link rel="stylesheet" href="style.css">
-    <title>Patricia Ruiz Diaz - Desarrollador Web  Front-end con conocimientos en Backend</title>
+    <link rel="stylesheet" href="navbar.css">
+    <title>Patricia Ruiz Diaz | Desarrollador Web  Front-end con conocimientos en Backend</title>
     <!-- favicon -->
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <!-- google fonts -->
@@ -24,52 +25,64 @@
 </head>
 <body class="container-fluid">
   <!-- barra de navegacion -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-toggler">
-          <a class="navbar-brand " href="#">
-            <img src="image/logo-prdz.png" class="logo-principal" alt="logo asterisco" width="40">
-          </a>
-          <ul class="navbar-bar d-flex justify-content-center aligne-items-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#section-about-me">Sobre mi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#seccion-proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#seccion-experiencia">Experiencia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="#section-contact">Contacto</a>
-            </li>
-          </ul>
-          
-        </div>
-      </div>
+  <!-- <nav class="navbar navbar-expand-md navbar-dark"> -->
+
+
+      <!-- boton abrir-->
+      <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-list btnCuadrado botondemenu abrir" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      
+      <!-- boton cerrar-->
+
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-circle btnCuadrado botondemenu cerrar no_visible" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+      </svg>
+
+      <aside class="panel ">
+        <nav class="menu " id="nav">
+          <a href="#encabezado">Inicio</a>
+          <a href="#section-about-me">Acerca de mi</a>
+          <a href="#seccion-educacion">Educación y cursos</a>
+          <a href="#seccion-experiencia">Experiencia Laboral</a>
+          <a href="#seccion-proyectos">Proyectos Principales</a>
+          <a href="#footer">Contactarse conmigo</a>
+        </nav>
+      </aside>
   </nav>
 
     <!-- seccion hero -->
-    <section class="hero align-items-stretch">
-      <div class="hero-principal d-flex-column justify-content-center align-items-center">
-        <img src="image/fotoperfil22.jpg" alt="foto de perfil de patricia ruiz diaz" class="hero-imagen-perfil">
-        <h1>Soy Patricia Ruiz Diaz</h1>
-        <h2>front developer</h2>
-      </div>
-      
-      
-      <!-- hero inferior -->
-      <div class="hero-inferior">
-        <img src="image/tecno1.jpg" alt="imagen de codigo" class="hero-inferior-imagen img-fluid">
+    <section id="encabezado" class="hero align-items-stretch banner  ">
+      <div class="hero-principal d-flex-column justify-content-center align-items-space-around ">
+        <h2 class="title-principal-soy">Soy </h2>
+        <h1 class="title-principal-nombre"><span class="span-title">P</span>atricia <span class="span-title">R</span>uiz <span class="span-title">D</span>ia<span class="span-title">Z</span> </h1>
+        <h2 class="subtitle-principal">front developer</h2>
+        
         
       </div>
+        
+        <div class="content-fluid hero-footer">
+          <h3 class="subtitle-principal">Diseño <span class="span-subtitle">Web</span> profesional</h3>
+          <p class="subtitle-principal">Contactame para encontrar promociones especiales</p>
+
+          <div style="height: 150px; ;width:inherit; overflow: hidden;" >
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+              <path d="M-3.10,80.44 C73.64,-1.45 267.21,245.23 500.00,49.98 L500.00,150.00 L-2.54,151.48 Z" 
+              style="stroke: none; fill: #dde4e6;"></path>
+            </svg>
+          </div>
+
+          
+      </div>
+
     </section>
+
+
   <!-- sobre mi -->
   <section id="section-about-me" class="sobre-mi seccion-oscura">
     <div class="contenedor">
+      <img src="image/fotoperfil22.jpg" alt="foto de perfil de patricia ruiz diaz" class="hero-imagen-perfil">
       <h2 class="seccion-titulo texto-blanco">Conoce a Patricia Ruiz Diaz</h2>
       <p class="seccion-texto">
         Como desarrollador web en JavaScript con un sólido conocimiento de diseño innovador orientado a la satisfacción del usuario.
@@ -94,15 +107,17 @@
       
     </div>
   </section>
+
+
   <!-- seccion experiencia o conocimientos -->
-  <section  class="experiencia seccion-clara">
-    <div class="container text-center">
-      <h2 class="experiencia-titulo">tecnologias</h2>
-      <div class="row">
+  <section  class="tecnologia ">
+    <div class="container text-center seccion-clara contenedor-tecnologia">
+      <h2 class="seccion-titulo texto-negro">tecnologias</h2>
+      <div class="row contenedor-columnas">
         <!-- desarrollo web -->
-        <div class="col-12 col-md-3 col-lg-3 col-xl-3 columna ">
-          <i class="bi bi-laptop icono icono-experiencia"></i>
-          <span class="experiencia-titulo">Desarrollo Web-Diseño</span>
+        <div class="col-12 col-md-3 col-lg-3 col-xl-3 columna columna1">
+          <i class="bi bi-laptop icono icono-tecnologia"></i>
+          <span class="tecnologia-titulo">Desarrollo Web-Diseño</span>
           <div class="badges-contenedor">
             <span class="badge bg-primary">html</span>
             <span class="badge bg-primary">css</span>
@@ -114,8 +129,8 @@
         </div>
 <!-- bases de datos -->
         <div class="col-12 col-md-3 col-lg-3 col-xl-3  columna">
-          <i class="bi bi-server icono icono-experiencia"></i>
-          <span class="experiencia-titulo">bases de datos</span>
+          <i class="bi bi-server icono icono-tecnologia"></i>
+          <span class="tecnologia-titulo">bases de datos</span>
           <div class="badges-contenedor">
             <span class="badge bg-primary">MySQL</span>
             <span class="badge bg-primary">SQL</span>
@@ -124,8 +139,8 @@
         </div>
 <!-- backend -->
         <div class="col-12 col-md-3 col-lg-3 col-xl-3 columna ">
-          <i class="bi bi-tools icono icono-experiencia"></i>
-          <span class="experiencia-titulo">backend</span>
+          <i class="bi bi-tools icono icono-tecnologia"></i>
+          <span class="tecnologia-titulo">backend</span>
           <div class="badges-contenedor">
             <span class="badge bg-primary">Java</span>
             <span class="badge bg-primary">Python</span>
@@ -133,9 +148,9 @@
           </div>
         </div>
         <!-- otras tecnologias -->
-        <div class="col-12 col-md-3 col-lg-3 col-xl-3 columna ">
-          <i class="bi bi-graph-up-arrow icono icono-experiencia"></i>
-          <span class="experiencia-titulo">otras tecnologias que manejo</span>
+        <div class="col-12 col-md-3 col-lg-3 col-xl-3 columna columna4 ">
+          <i class="bi bi-graph-up-arrow icono icono-tecnologia"></i>
+          <span class="tecnologia-titulo">otras tecnologias que manejo</span>
           <div class="badges-contenedor">
             <span class="badge bg-primary">git</span>
             <span class="badge bg-primary">github</span>
@@ -146,21 +161,90 @@
           </div>
         </div>
       </div>
-      </div> 
-
-  </div>
+    </div>  
+  </section>
 
 <!-- seccion proyectos -->
-<section id="seccion-proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-  <!-- <h3 class="">descripción</h3> -->
-  <!-- galeria de proyectos -->
+<h2 class="seccion-titulo text-center texto-blanco">Proyectos</h2>
+
+<section id="seccion-proyectos" class="container contenedor-proyectos text-center ">
+  <div class="container-izq ">
+
+    <div class="row">
+      
+      <!-- PROYECTO1 -->
+      
+      <div class="proyecto col-12 col-md-12">
+        <img src="./image/imgProyectos/control-stock/control_stock_JAVA.jpg" alt="tecnologia1">
+        <div class="overley">
+          <h3 class="seccion-titulo texto-negro"> control de stocK</h3>
+          <p class="overley-descripcion texto-negro">proyecto realizado en Java y MySQL</p>
+        <div class="iconos-contenedor">
+          <a href="http://www.github.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github icono iconos-proyectos"></i>
+          </a>
+          <a href="http://www.mipagina.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-laptop icono iconos-proyectos"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
   
-  <!-- PROYECTO1 -->
-  <h2 class="seccion-titulo texto-negro"> proyecto 1</h2>
-  <div class="container ">
-    <div class="proyecto">
+  
+    <!-- PROYECTO2 -->
+    <div class="row">
+
+    <div class="proyecto col-12 col-md-12 ">
+      <img src="./image/imgProyectos/libreria_base_de_datos/libreria_BD.jpg" alt="tecnologia2">
+      <div class="overley">
+        <h3 class="seccion-titulo texto-negro"> MANEJO DE BASES DE DATOS</h3>
+        <p class="overley-descripcion texto-negro">proyecto realizado en MySQL</p>
+        <div class="iconos-contenedor">
+          <a href="http://www.github.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github icono iconos-proyectos"></i>
+          </a>
+          <a href="http://www.mipagina.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-laptop icono iconos-proyectos"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+  
+    <!-- PROYECTO3 -->
+    <div class="row">
+    
+    <div class="proyecto col-12 col-md-12">
+      <img src="./image/imgProyectos/shoes/carrito.jpg" alt="tecnologia3">
+      <div class="overley">
+        <h3 class="seccion-titulo texto-negro"> ECOMMERCE "SHOES"</h3>
+        <p class="overley-descripcion texto-negro">proyecto realizado en html, css y  javascript</p>
+        <div class="iconos-contenedor">
+          <a href="http://www.github.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github icono iconos-proyectos"></i>
+          </a>
+          <a href="http://www.mipagina.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-laptop icono iconos-proyectos"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="conteiner-Der ">
+
+    <div class="row">
+    
+    <!-- PROYECTO4 -->
+    
+    <div class="proyecto col-12 col-md-12">
       <img src="./image/tecno1.jpg" alt="tecnologia1">
       <div class="overley">
+        <h3 class="seccion-titulo texto-negro">LA TIENDITA ECOMMERCE</h3>
         <p class="overley-descripcion">proyecto realizado en html, css y  javascript</p>
         <div class="iconos-contenedor">
           <a href="http://www.github.com" target="_blank" rel="noopener noreferrer">
@@ -174,12 +258,14 @@
     </div>
   </div>
   
-  <!-- PROYECTO2 -->
-  <h2 class="seccion-titulo texto-negro"> proyecto 2</h2>
-  <div class="container ">
-    <div class="proyecto">
+  
+  <!-- PROYECTO5 -->
+  <div class="row">
+
+    <div class="proyecto col-12 col-md-12 ">
       <img src="./image/tecno2.jpg" alt="tecnologia2">
       <div class="overley">
+        <h3 class="seccion-titulo texto-negro"> proyecto 5</h3>
         <p class="overley-descripcion">proyecto realizado en html, css y  javascript</p>
         <div class="iconos-contenedor">
           <a href="http://www.github.com" target="_blank" rel="noopener noreferrer">
@@ -193,12 +279,14 @@
     </div>
   </div>
   
-  <!-- PROYECTO3 -->
-  <div class="container text-center">
-    <h2 class="seccion-titulo texto-negro"> proyecto 3</h2>
-    <div class="proyecto">
+  
+  <!-- PROYECTO6 -->
+  <div class="row">
+    
+    <div class="proyecto col-12 col-md-12">
       <img src="./image/tecno3.jpg" alt="tecnologia3">
       <div class="overley">
+        <h3 class="seccion-titulo texto-negro"> proyecto 6</h3>
         <p class="overley-descripcion">proyecto realizado en html, css y  javascript</p>
         <div class="iconos-contenedor">
           <a href="http://www.github.com" target="_blank" rel="noopener noreferrer">
@@ -211,21 +299,29 @@
       </div>
     </div>
   </div>
-  <!-- boton a otros proyectos -->
-  <a href="https://github.com/perd2020?tab=repositories" target="_blank" rel="noopener noreferrer" class="texto-verMas text-center lh-100">
-    <button type="button" class="btn btn-verMas"> Ver más proyectos
-      <i class="bi bi-arrow-right-circle-fill icono "></i>
-    </button>
-  </a>
+</div>
+
+
+
+</div>
+
 
 
 </section>
 
+
+<!-- boton a otros proyectos -->
+<a href="https://github.com/perd2020?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-vermas texto-verMas text-center d-flex justify-content-end lh-100">
+  <button type="button" class="btn btn-verMas"> Ver más proyectos
+    <i class="bi bi-arrow-right-circle-fill icono "></i>
+  </button>
+</a>
+
 <!-- lista de ESTUDIOS Y CURSOS -->
-<section class="articulos justify-content-center seccion-articulo texto-negro">
-  <h2>Estudios y cursos</h2>
+<section id="seccion-educacion" class="articulos  texto-negro seccion-oscura justify-content-center seccion-articulo texto-negro">
+  <h2 class="seccion-titulo texto-blanco">Estudios y cursos</h2>
   <div class="card">
-    <div class="card-header">más recientes</div>
+    <div class="card-header texto-negro text-center">más recientes</div>
     <ul class="list-group list-group-flush">
       <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary list-group-item" data-bs-toggle="modal" data-bs-target="#UNPAZ">
@@ -310,10 +406,10 @@
 </section>
 
 <!-- lista de EXPERIENCIA LABORAL -->
-<section  id="seccion-experiencia" class="articulos justify-content-center seccion-articulo texto-negro">
-  <h2>Experiencia Laboral</h2>
+<section  id="seccion-experiencia" class="articulos  texto-negro seccion-oscura justify-content-center seccion-articulo">
+  <h2 class="seccion-titulo texto-blanco">Experiencia Laboral</h2>
   <div class="card">
-    <div class="card-header">más recientes</div>
+    <div class="card-header texto-negro text-center">más recientes</div>
     <ul class="list-group list-group-flush">
 
             <!-- DESARROLLO WEB -->
@@ -432,10 +528,10 @@
   </section>
 
 <!-- testimonios con carrusel-->
-<section id="seccion-testimonio" class="testimonios seccion-clara">
-  <h2 class="seccion-titulo">Referencias</h2>
+<section id="seccion-testimonio" class=" container Testimonios  ">
+  <h2 class="seccion-titulo titulo-claro">Referencias</h2>
   <h3 class="seccion-descripcion">Testimonios de algunos de mis compañeros</h3>
-  <div id="testimonios-carrusel" class="carousel carousel-black slide text-center" data-bs-ride="carousel">
+  <div id="testimonios-carrusel" class="carousel carousel-black slide text-center " data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="container">
@@ -487,7 +583,7 @@
 
 
 <!-- seccion de contacto -->
-<section class="contacto seccion-oscura">
+<section class="contacto seccion-clara texto-blanco">
   <div class="container">
     <div class="container text-center d-flex justify-content-evenly rectangulo">
       <div class="row">
@@ -509,7 +605,7 @@
 
 
 <!-- footer -->
-<footer id="footer" class="container-fluid footer seccion-oscura ">
+<footer id="footer" class="container-fluid footer seccion-oscura texto-blanco ">
   <div class="footer-logo-frase d-flex flex-wrap align-items-center justify-content-center ">
     <i class="bi bi-cup-hot-fill footer-logo"></i>
     <p class="footer-texto text-center">Aprendo todos los dias <br> nuevas tecnologias </p>
@@ -555,17 +651,7 @@
     </form>
   </div>
 
-  <!--  -->
-  <!-- <div class="correo  d-flex flex-wrap align-items-center justify-content-center">
-    <span class="icono-correo d-flex flex-wrap align-items-center justify-content-center">    
-      <i class="bi bi-envelope-at"></i>    
-    </span>
-    <form action="https://formsubmit.co/pruizdiaz928@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="juan perez" required>
-      <input type="email" name="email" placeholder="juanPerez@gmail.com" required>
-      <button type="submit">Send</button>
-    </form>
-  </div> -->
+  
 
   <!-- derechos de autor -->
   <div class="derechos-de-autor">
@@ -579,5 +665,6 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>
